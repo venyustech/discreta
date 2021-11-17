@@ -1,0 +1,4 @@
+21.1-Leitura-e-escrita-em-arquivos-externos##Deixando-um-arquivo-vazio.c:4:9: fatal error: fstream.h: No such file or directory
+ #include<fstream.h>
+         ^~~~~~~~~~~
+compilation terminated.

@@ -1,0 +1,6 @@
+passo1:tirar parafuso
+passo2:tirar calota
+passo3:tirar pneu velho
+passo4:colocar pneu novo
+passo5:colocar calota
+passo6:colocar parafusos

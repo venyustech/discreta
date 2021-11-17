@@ -1,0 +1,12 @@
+DIFERENCAO CODIFICACAO E PROGRAMACAO
+
+PROGRACAO: 
+           Eh o processo de escrita , teste e manutencao de um programa de computador
+           Eh quando organizamos nossos pensamentos de uma forma logica paraque eles sejam interpretados por um computador.
+           Para existis programacao, eh preciso existir LOGICA.
+
+CODIFICACAO:
+           Quando escrevemos codigos manualmente e temos acesso a edicao linha a linha.
+           A codificacao pode ser feita sem necessariamente  ser uma linguagem, por exemplo, com HTML E CSS que apenas formatam texto.
+           A codificacao pode ser feita junto com programacao, com linguagens que envolvem logica, como C, javascript e python.
+

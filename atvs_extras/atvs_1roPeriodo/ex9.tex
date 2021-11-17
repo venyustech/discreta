@@ -1,0 +1,49 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[latin1]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\author{Gardênia Georgia Barbosa De Siqueira}
+\begin{document}
+	\chapter{Funtions in c language}
+	Este livro tem como objetivo comentar sobre 10 funcoes em linguagem C.
+	\section{Função printf()}
+	 Comando usado para exibir valores na tela.
+	 Também é possível mostrar texto e valores de variáveis usando argumentos.\\
+	 Exemplo:\\
+	 printf("Total a pagar:\%d", total);
+	 \section{Função scanf()}
+	 É utilizada para fazer a leitura de dados formatados via teclado.\\
+	 Exemplo:\\
+	 scanf(?\%f?, \&salario);
+	 \section{Função rand()}
+	 Quando esta função é chamada ela produz um valor aleatório na faixa entre \0 e a constante RANDMAX. O valor desta constante encontra-se definida no arquivo stdlib.h.
+	 \section{Função atoi()}
+	 Atoi é um termo da computação que designa uma função da linguagem C que converte strings em números inteiros. É uma forma abreviada de escrever ASCII para inteiro.
+	 \section{Função malloc()}
+	 A função  malloc  (o nome é uma abreviatura de memory allocation) aloca espaço para um bloco de bytes consecutivos na memória RAM (= random access memory) do computador e devolve o endereço desse bloco.  O número de bytes é especificado no argumento da função. No seguinte fragmento de código, malloc aloca 1 byte.
+	\section{Função free()}
+	As variáveis alocadas estaticamente dentro de uma função, também conhecidas como variáveis automáticas ou locais, desaparecem assim que a execução da função termina. Já as variáveis alocadas dinamicamente continuam a existir mesmo depois que a execução da função termina. Se for necessário liberar a memória ocupada por essas variáveis, é preciso recorrer à função free.
+	
+	A função free desaloca a porção de memória alocada por malloc. A instrução free (ptr) avisa ao sistema que o bloco de bytes apontado por ptr está disponível para reciclagem. A próxima invocação de malloc poderá tomar posse desses bytes.
+	\section{Função difftime()}
+	Função da Biblioteca time.h. difftime dupla (time1 time-t, time2 time-t ) Retorna o número de segundos diferença entre time1etime2(time1 - time2). Os dois times estão especificados no tempo do calendário, representa o era desde a época (tempo universal coordenado UTC: 1970-01-01 00:00:00) tempo decorrido.
+	\section{Função realloc()}
+	Às vezes é necessário alterar, durante a execução do programa, o tamanho de um bloco de bytes que foi alocado por malloc.  Isso acontece, por exemplo, durante a leitura de um arquivo que se revela maior que o esperado.  Nesse caso, podemos recorrer à função realloc para redimensionar o bloco de bytes.
+	
+	A função realloc recebe o endereço de um bloco previamente alocado por malloc (ou por realloc) e o número de bytes que o bloco redimensionado deve ter. A função aloca o novo bloco, copia para ele o conteúdo do bloco original, e devolve o endereço do novo bloco.
+	
+	Se o novo bloco for uma extensão do bloco original, seu endereço é o mesmo do original (e o conteúdo do original não precisa ser copiado para o novo). Caso contrário, realloc copia o conteúdo do bloco original para o novo e libera o bloco original (invocando free).  A propósito, o tamanho do novo bloco pode ser menor que o do bloco original.
+	\section{Função getch()}
+	A função getche lê o caractere do teclado e permite que seja impresso na tela.
+	Esta função não aceita argumentos e devolve o caractere lido para a função que a chamou.
+	\section{Função putchar()}
+	A função putchar é mais uma das funções de saída existentes na biblioteca stdio.h
+	Esta função permite escrever na tela apenas um caractere.
+	
+	
+\end{document}

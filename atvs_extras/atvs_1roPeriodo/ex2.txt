@@ -1,0 +1,3 @@
+-o liga o objeto gerado para um executavel
+-Wunused-variable exibe alerta sobre problemas
+–Wall -WEXTRA para exibir todos os alertas

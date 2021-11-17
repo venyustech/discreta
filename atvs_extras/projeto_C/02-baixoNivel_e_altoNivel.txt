@@ -1,0 +1,10 @@
+Diferença entre linguagem de baixo nivel e alto nivel:
+BAIXO NIVEL: 
+            Mais proximo da linguagem da maquina.
+            Eh possivel apontar diretamente para posicoes da memoria que contem variaveis.
+            Funciona de forma mais velos, pois pode ser processados mais rapidamente(por serem mais proximas do binario).
+
+ALTO NIVEL:
+            Mais proximo da linguagem falada.
+            Nao costuma permitir alocaçao de memoria.
+            Precisa passar por interpretadores, como navegadores ou maquinas virtuais.

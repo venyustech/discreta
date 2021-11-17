@@ -1,0 +1,62 @@
+/* ************************************************************************ *
+*    FUNTION ROOTS,2018 VERSION                                            *
+*    This program will show the quadratics funtion roots                   *
+*                                                                          *
+*    Copyright (C) 2018 by Gardenia Georgia Barbosa de Siqueira            *
+*                                                                          *
+*    This program is free software; you can redistribute it and/or modify  *
+*    it under the terms of the GNU General Public License as published by  *
+*    the Free Software Foundation; either version 2 of the License, or     *
+*    (at your option) any later version.                                   *
+*                                                                          *
+*    This program is distributed in the hope that it will be useful,       *
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+*    GNU General Public License for more details.                          *
+*                                                                          *
+*    You should have received a copy of the GNU General Public License     *
+*    along with this program; if not, write to the                         *
+*    Free Software Foundation, Inc.,                                       *
+*    59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+*                                                                          *
+*    To contact the author, please write to:                               *
+*    Gardenia Georgia Barbosa de Siqueira <gardenia.georgia.b.s@gmail.com> *
+*    Webpage: http://www.upe.com                                           *
+*    Phone: +55 (81) 99785-0393                                            *
+* ************************************************************************ *
+* 
+*/
+
+algoritmo raiz;
+variáveis
+    a , b, c, delta, raizdedelta, x1, x2 : real;
+fim-variáveis
+
+início
+    imprima("Bem-vindo ao programa que calcula as raizes da funcao quadratica(ax²+bx+c):"); /* Boas-vindas ao usuário */
+    /* Entrada de dados: */
+    imprima("Digite o valor de a: ");
+    a:= leia();
+
+    se a=0 então /* condição de inexistencia de uma função quadrática */
+        imprima("Desculpe, mas a=0 nao eh equacao do segundo grau");
+    senão
+        imprima("Digite o valor de b: ");
+        b:= leia();
+        imprima("Digite o valor de c: ");
+        c:= leia();
+        raizdedelta:=0.001;
+        delta:=(b*b)-(4*a*c);
+        se delta < 0 então /* condição de existência de uma raiz real */
+            imprima("Não existe raiz real");
+        senão
+            enquanto raizdedelta*raizdedelta<=delta faça
+                raizdedelta:=raizdedelta+0.001;
+            fim-enquanto
+            x1:= (-b + raizdedelta)/(2*a);
+            x2:= (-b - raizdedelta)/(2*a);
+
+            imprima("x1=",x1, "e x2=",x2); /* Imprime o resultado na tela */ 
+        fim-se
+    fim-se
+fim
